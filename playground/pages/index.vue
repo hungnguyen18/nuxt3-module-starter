@@ -5,5 +5,5 @@ const log = 'NUXT3-MODULE-STARTER'
 
 <template>
     <h1>{{ log }}</h1>
-    <test />
+    <w-test />
 </template>
