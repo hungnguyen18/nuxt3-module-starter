@@ -1,23 +1,9 @@
-<template>
-  <div :class="toggle ? 'sample-class' : 'sample-unused-class'">
-    some text
-    <button @click="toggle = !toggle">Toggle class</button>
-  </div>
-</template>
-
-<script>
-export default {
-  data: () => ({
-    toggle: true
-  }),
-}
+<script setup>
+const props = defineProps({})
+const log = 'Hello world'
 </script>
 
-<style>
-.sample-class {
-background: blue;
-}
-.sample-unused-class {
-background: red;
-}
-</style>
+<template>
+  <h1>{{ log }}</h1>
+  <test />
+</template>
