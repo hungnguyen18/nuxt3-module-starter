@@ -1,12 +1,8 @@
+import { typescript, nitro } from './configs/index'
+
 export default defineNuxtConfig({
-  css: ['~/styles/global.css'],
-  nitro: {
-    prerender: {
-      routes: ['/'],
-    },
-  },
-  modules: ['../src/module'],
-  typescript: {
-    tsConfig: { compilerOptions: { baseUrl: '.' } },
-  },
+    css: ['~/styles/global.css'],
+    modules: ['../src/module'],
+    typescript,
+    nitro,
 })

@@ -1,9 +1,9 @@
 <script setup>
 const props = defineProps({})
-const log = 'Hello world'
+const log = 'NUXT3-MODULE-STARTER'
 </script>
 
 <template>
-  <h1>{{ log }}</h1>
-  <test />
+    <h1>{{ log }}</h1>
+    <test />
 </template>
